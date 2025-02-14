@@ -2,6 +2,10 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
+## Purpose
+
+This application is developed for educational purposes to explore and understand Angular's Change Detection mechanism. It serves as a playground to experiment with various change detection strategies and techniques.
+
 ## Development server
 
 To start a local development server, run:
@@ -28,7 +32,7 @@ ng generate --help
 
 ## Building
 
-To build the project run:
+To build the project, run:
 
 ```bash
 ng build
@@ -57,3 +61,15 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
+
+## Contact
+
+For any questions or feedback, please contact the project maintainer at [your-email@example.com].
