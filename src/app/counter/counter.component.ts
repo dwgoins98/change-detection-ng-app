@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, inject, NgZone, OnInit, signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  // inject,
+  // NgZone,
+  OnInit,
+  signal,
+} from '@angular/core';
 import { InfoMessageComponent } from '../info-message/info-message.component';
 
 @Component({
@@ -13,7 +20,12 @@ export class CounterComponent implements OnInit {
    * NgZone instance to run code outside of Angular's zone to avoid triggering change detection.
    * @private
    */
-  private zoneOptOut = inject<NgZone>(NgZone);
+  // private zoneOptOut = inject<NgZone>(NgZone);
+
+  /******************************************************
+   * Opting out of Zone.JS and only using signals to tell
+   * Angular when changes occur.
+  *******************************************************/
 
   /**
    * The current count value.
@@ -23,7 +35,7 @@ export class CounterComponent implements OnInit {
   /**
    * A debug output message for the component.
    * Logs a message to the console whenever it is re-evaluated.
-   * 
+   *
    * @returns A string containing the debug output message.
    */
   get debugOutput() {
@@ -54,10 +66,11 @@ export class CounterComponent implements OnInit {
       this.count.set(0);
     }, 4000);
 
-    this.zoneOptOut.runOutsideAngular(() => {
+    // this.zoneOptOut.runOutsideAngular(() => {
       setTimeout(() => {
         console.log('Timer expired');
       }, 5000);
-    });
+    // });
+
   }
 }
