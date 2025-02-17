@@ -10,14 +10,14 @@ import { NewMessageComponent } from './new-message/new-message.component';
   changeDetection: ChangeDetectionStrategy.OnPush, // Using OnPush change detection to update Messages component only when the there is a change
 })
 export class MessageComponent {
-  messages = signal<string[]>([]);
+  // messages = signal<string[]>([]);
 
   get debugOutput() {
     console.log('[Messages] "debugOutput" binding re-evaluated.');
     return 'Messages Component Debug Output';
   }
 
-  onAddMessage(message: string){
-    this.messages.update((oldMessages) => [...oldMessages, message])
-  }
+  // onAddMessage(message: string){
+  //   this.messages.update((oldMessages) => [...oldMessages, message])
+  // }
 }
