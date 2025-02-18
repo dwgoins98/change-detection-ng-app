@@ -5,3 +5,14 @@
     background-color: #2d262a;
     border: 2px solid #fa21aa;
   }
+
+  button {
+    font: inherit;
+    background-color: #8000ff;
+    color: #eed477;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
