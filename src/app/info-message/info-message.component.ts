@@ -5,6 +5,7 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
   imports: [],
   templateUrl: './info-message.component.html',
   styleUrl: './info-message.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InfoMessageComponent {
   isClicked: boolean = false;
